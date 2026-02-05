@@ -4,37 +4,37 @@ using System.Runtime.ConstrainedExecution;
 
 namespace FirstLaba {
 
-  class Program{
+  class Program {
 
-        static void Main() {
+    static void Main() {
 
-          int number, power, newNumber, count, numberN;
-          string numberX;
-          char secondDigit;
+      int number, power, newNumber, count, numberN;
+      string numberX;
+      char secondDigit;
 
-          newNumber = 1;
-          numberN = 1;
+      newNumber = 1;
+      numberN = 1;
 
-          Console.WriteLine("Task 1:");
-          Console.Write("Enter number: ");
-          number = Convert.ToInt32(Console.ReadLine());
-          Console.Write("Enter the degree of the number: ");
-          power = Convert.ToInt32(Console.ReadLine());
+      Console.WriteLine("Task 1:");
+      Console.Write("Enter number: ");
+      number = Convert.ToInt32(Console.ReadLine());
+      Console.Write("Enter the degree of the number: ");
+      power = Convert.ToInt32(Console.ReadLine());
 
-          for (count = 0; count < power; ++count) { 
-            newNumber = newNumber * number;
-          }
-          Console.WriteLine(newNumber);
-          Console.WriteLine();
+      for (count = 0; count < power; ++count) { 
+        newNumber = newNumber * number;
+      }
+      Console.WriteLine(newNumber);
+      Console.WriteLine();
 
-          Console.WriteLine("Task 2:");
-          Console.Write("Enter number >= 100: ");
-          numberX = Console.ReadLine();
-          secondDigit = numberX[1]; 
-          numberX = numberX.Remove(1, 1);
-          numberX = numberX + secondDigit;
-          numberN = Convert.ToInt32(numberX);
-          Console.WriteLine(numberN);
-        } 
+      Console.WriteLine("Task 2:");
+      Console.Write("Enter number >= 100: ");
+      numberX = Console.ReadLine();
+      secondDigit = numberX[1]; 
+      numberX = numberX.Remove(1, 1);
+      numberX = numberX + secondDigit;
+      numberN = Convert.ToInt32(numberX);
+      Console.WriteLine(numberN);
+    } 
   }
 }
